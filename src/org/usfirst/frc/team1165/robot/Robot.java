@@ -7,6 +7,9 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import org.usfirst.frc.team1165.robot.commands.ReportMyAccelerometer;
 import org.usfirst.frc.team1165.robot.subsystems.MyAccelerometer;
+import org.usfirst.frc.team1165.robot.subsystems.MyCamera;
+
+
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -18,9 +21,12 @@ import org.usfirst.frc.team1165.robot.subsystems.MyAccelerometer;
 public class Robot extends IterativeRobot {
 
 	public static final MyAccelerometer myAccelerometer = new MyAccelerometer();
+	public static final MyCamera myCamera = new MyCamera();
 	public static OI oi;
-
+    
     Command autonomousCommand;
+    
+
 
     /**
      * This function is run when the robot is first started up and should be
@@ -30,6 +36,8 @@ public class Robot extends IterativeRobot {
 		oi = new OI();
         // instantiate the command used for the autonomous period
         autonomousCommand = new ReportMyAccelerometer();
+        
+
     }
 	
 	public void disabledPeriodic() {
