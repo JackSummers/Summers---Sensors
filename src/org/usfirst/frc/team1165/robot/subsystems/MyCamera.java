@@ -24,7 +24,7 @@ public class MyCamera extends Subsystem {
         setDefaultCommand(new ReportMyCamera());
     }
     public void report(){
-         NIVision.IMAQdxStartAcquisition(session);
+         
 
          /*
           * grab an image, draw the circle, and provide it for the camera server
@@ -52,6 +52,7 @@ public class MyCamera extends Subsystem {
         session = NIVision.IMAQdxOpenCamera("cam0",
                 NIVision.IMAQdxCameraControlMode.CameraControlModeController);
         NIVision.IMAQdxConfigureGrab(session);
+        NIVision.IMAQdxStartAcquisition(session);
     }
 }
 
