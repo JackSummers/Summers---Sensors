@@ -20,7 +20,7 @@ import org.usfirst.frc.team1165.robot.subsystems.MyCamera;
 public class Robot extends IterativeRobot {
 
 	public static final MyAccelerometer myAccelerometer = new MyAccelerometer();
-	public static final MyCamera myCamera = new MyCamera();
+	//public static final MyCamera myCamera = new MyCamera();
 	public static final AbsoluteEncoder absoluteEncoder = new AbsoluteEncoder();
 	public static OI oi;
 

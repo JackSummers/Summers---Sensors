@@ -11,7 +11,7 @@ public class ReportMyCamera extends Command {
 
 	public ReportMyCamera() {
 		// Use requires() here to declare subsystem dependencies
-		requires(Robot.myCamera);
+		//requires(Robot.myCamera);
 	}
 
 	// Called just before this Command runs the first time
@@ -21,7 +21,7 @@ public class ReportMyCamera extends Command {
 
 	// Called repeatedly when this Command is scheduled to run
 	protected void execute() {
-		Robot.myCamera.report();
+		//Robot.myCamera.report();
 	}
 
 	// Make this return true when this Command no longer needs to run execute()
