@@ -16,4 +16,7 @@ public class RobotMap {
     // public static int rangefinderPort = 1;
     // public static int rangefinderModule = 1;
 	
+	// For accessing the VEX ultrasonic range finder:
+		public static int vexPingChannel = 0;
+		public static int vexEchoChannel = 1;
 }

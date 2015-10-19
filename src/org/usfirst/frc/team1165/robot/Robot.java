@@ -9,6 +9,7 @@ import org.usfirst.frc.team1165.robot.commands.ReportMyAccelerometer;
 import org.usfirst.frc.team1165.robot.subsystems.AbsoluteEncoder;
 import org.usfirst.frc.team1165.robot.subsystems.MyAccelerometer;
 import org.usfirst.frc.team1165.robot.subsystems.MyCamera;
+import org.usfirst.frc.team1165.robot.subsystems.VexRangeFinder;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -22,6 +23,7 @@ public class Robot extends IterativeRobot {
 	public static final MyAccelerometer myAccelerometer = new MyAccelerometer();
 	//public static final MyCamera myCamera = new MyCamera();
 	public static final AbsoluteEncoder absoluteEncoder = new AbsoluteEncoder();
+	public static final VexRangeFinder vexRangeFinder = new VexRangeFinder(RobotMap.vexPingChannel, RobotMap.vexEchoChannel);
 	public static OI oi;
 
 	Command autonomousCommand;
